@@ -29,7 +29,11 @@ interface getSystemSpecsInterface {
 export const getSystemSpecs: getSystemSpecsInterface = async () => {
   const ip = await publicIp.v4();
   const ipObject =
-    results.en0 || results.enp10s0 || results.Ethernet0 || results['Wi-Fi'];
+    results.en0 ||
+    results.enp10s0 ||
+    results.eth0 ||
+    results.Ethernet0 ||
+    results['Wi-Fi'];
   const privateIp = ipObject[0];
   const totalMemory = os.totalmem();
   const freeMemory = os.freemem();
