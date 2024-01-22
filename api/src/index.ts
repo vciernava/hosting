@@ -12,6 +12,6 @@ app.use(express.json());
 
 setupRoutes(app);
 
-app.listen(3333, () => {
+app.listen(3333, '0.0.0.0', () => {
   console.log('[API] server listening on http://localhost:3333');
 });
