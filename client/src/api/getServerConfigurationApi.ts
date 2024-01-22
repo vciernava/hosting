@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const getServerConfigurationApi = ({
   nodeIp,
@@ -8,5 +8,5 @@ export const getServerConfigurationApi = ({
   nodeIp: string;
 }) =>
   axios
-    .get(`http://${nodeIp}:4444/servers/${serverId}/configuration`)
+    .get(`http://${nodeIp}:3003/servers/${serverId}/configuration`)
     .then((response) => response.data);
