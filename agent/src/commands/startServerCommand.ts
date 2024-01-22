@@ -48,7 +48,6 @@ export const startServerCommand: startServerInterface = async ({
       '-e EULA=TRUE',
       `-e VERSION=${version}`,
       `-e MEMORY=${memory}M`,
-      '-e CREATE_CONSOLE_IN_PIPE=true',
       `itzg/minecraft-server`,
     ].join(' ');
 
