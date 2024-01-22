@@ -1,0 +1,22 @@
+{
+  "name": "darklabs-hosting",
+  "version": "1.0.0",
+  "description": "Minecraft server hosting system",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "install-workspace": "npm install --legacy-peer-deps",
+    "check:type": "npm run check:type --workspace=agent --workspace=api",
+    "dev:agent": "npm run dev --workspace=agent",
+    "dev:api": "npm run dev --workspace=api",
+    "dev:client": "npm run start --workspace=client",
+    "db": "docker-compose up -d",
+    "docs": "npx docsify-cli serve docs"
+  },
+  "workspaces": [
+    "agent",
+    "api",
+    "client",
+    "config"
+  ]
+}
