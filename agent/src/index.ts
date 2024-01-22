@@ -30,7 +30,7 @@ app.listen(4444, () => {
   console.log('[AGENT] server listening on http://localhost:4444');
 });
 
-const io = new SocketServer(5000, {
+const io = new SocketServer(3002, {
   cors: {
     origin: '*',
     methods: ['GET', 'POST'],
@@ -137,7 +137,7 @@ const startRunningServers = async () => {
 };
 
 (async function main() {
-  setIntervalAndRun(sendSystemSpecs, 5000);
+  setIntervalAndRun(sendSystemSpecs, 3002);
   // setIntervalAndRun(sendContainerHealth, 5000);
   // setIntervalAndRun(runAgentLogic, POLL_INTERVAL);
   startRunningServers();
