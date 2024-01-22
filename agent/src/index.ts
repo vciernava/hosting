@@ -26,8 +26,8 @@ app.use(express.json());
 
 setupRoutes(app);
 
-app.listen(4444, () => {
-  console.log('[AGENT] server listening on http://localhost:4444');
+app.listen(3003, () => {
+  console.log('[AGENT] server listening on http://localhost:3003');
 });
 
 const io = new SocketServer(3002, {

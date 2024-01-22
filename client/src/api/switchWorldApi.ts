@@ -10,7 +10,5 @@ export const switchWorldApi = ({
   world: string;
 }) =>
   axios
-    .post(
-      `http://${nodeIp}:4444/servers/${serverId}/worlds/${world}/switch`
-    )
+    .post(`http://${nodeIp}:3003/servers/${serverId}/worlds/${world}/switch`)
     .then((response) => response.data);

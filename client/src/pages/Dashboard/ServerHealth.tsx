@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 // import { Server } from "../../../api/src/models/Server";
 
 const ServerHealth = () => {
-
   return null;
 
   // useEffect(() => {

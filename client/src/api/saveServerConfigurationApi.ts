@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const saveServerConfigurationApi = ({
   nodeIp,
@@ -11,7 +11,7 @@ export const saveServerConfigurationApi = ({
 }) =>
   axios
     .post(
-      `http://${nodeIp}:4444/servers/${serverId}/configuration`,
+      `http://${nodeIp}:3003/servers/${serverId}/configuration`,
       configuration
     )
     .then((response) => response.data);

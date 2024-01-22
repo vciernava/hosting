@@ -8,5 +8,5 @@ export const getServerWorldsApi = ({
   nodeIp: string;
 }) =>
   axios
-    .get(`http://${nodeIp}:4444/servers/${serverId}/worlds`)
+    .get(`http://${nodeIp}:3003/servers/${serverId}/worlds`)
     .then((response) => response.data);
