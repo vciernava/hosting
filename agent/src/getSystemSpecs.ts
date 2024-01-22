@@ -35,6 +35,10 @@ export const getSystemSpecs: getSystemSpecsInterface = async () => {
     results.Ethernet0 ||
     results['Wi-Fi'];
   const privateIp = ipObject[0];
+
+  console.log('ip', ip);
+  console.log('privateIp', privateIp);
+
   const totalMemory = os.totalmem();
   const freeMemory = os.freemem();
 
